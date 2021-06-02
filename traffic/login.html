@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="khadijah.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" type="text/css" href="lc.css">  
+ <!--<script src="cookie.js"></script> -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>videobackground</title>
+<script src="jquery-3.3.1.min.js"></script>          <!--Javascript file-->
+<script>
+function login()
+{
+	var login=alert("You have logged in.");
+}
+</script>
+<style>           <!--Internal Styles-->
+button
+{
+	background:#FF3;
+	color:#000;
+	width: 200px;
+	height: 40px;
+	border:1px solid #F90;
+	font-size:16px;
+	border-radius:10px;
+	transition:0.6s;
+	overflow:hidden;
+}
+button:focus
+{
+	outline:none;
+}
+button:hover
+{
+	cursor:pointer;
+	transition:0.7s;
+	color:#F90;
+	background-color:#093;
+}
+/* Dropdown Button */
+.dropbtn {
+background:#0C3;
+	color:#000;
+	width: 200px;
+	height: 40px;
+	border:1px solid #F90;
+	font-size:16px;
+	border-radius:10px;
+	transition:0.6s;
+	overflow:hidden;
+	border-color:#009900;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position:relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #093;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   border-color:#333;
+  border-style:groove;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #000;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #093;}
+</style>
+</head>
+
+<body>
+<header class="v-header container">
+    <div class="fullscreen-video-wrap">
+      <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
+      <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
+      <video src="Run_5_wo_metadata_h264420_720p_UHQ.mp4" autoplay muted loop></video>
+ 
+    </video>
+    </div>
+    <div class="header-overlay"></div>
+      <div class="header-content text-md-center">
+      <div class="loginbox">
+ <h1>Log In</h1>
+<form action ="home.html">
+<p> Full Name</p>
+<input type="text" name="username" placeholder="Enter Username" />
+<p>Citizen ID</p>
+<input type="password" name="" placeholder="Enter ID">
+<div class="dropdown">
+  <button class="dropbtn">Status</button>
+  <div class="dropdown-content">
+    <a href="#">traffic police</a>
+    <a href="#">Vehicle owner</a>
+    <a href="#">pedestrain</a>
+      </div>
+      </div>
+      <br />
+      <br />
+       <input type="submit" name="" value="Login" onClick="login()" />
+  </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+  </header>
+
+</body>
+</html>
